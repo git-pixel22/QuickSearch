@@ -1,20 +1,31 @@
 {
   "manifest_version": 2,
-  "name": "Quick ChatGPT Access",
+  "name": "ChatGPT Quick Access",
   "version": "1.0",
-  "permissions": ["tabs", "activeTab"],
+  "description": "Quickly access ChatGPT with selected text.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["script.js"],
     "persistent": false
   },
   "browser_action": {
     "default_popup": "popup.html"
   },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "commands": {
-    "openChatGPT": {
+    "open-chatgpt": {
       "suggested_key": {
         "default": "Ctrl+Shift+Z",
-        "mac": "Command+Shift+Z"
+        "mac": "Cmd+Shift+Z"
       },
       "description": "Open ChatGPT with selected text"
     }
