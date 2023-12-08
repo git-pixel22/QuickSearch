@@ -25,7 +25,7 @@
     "open-chatgpt": {
       "suggested_key": {
         "default": "Ctrl+Shift+Z",
-        "mac": "Cmd+Shift+Z"
+        "mac": "Command+Shift+Z"
       },
       "description": "Open ChatGPT with selected text"
     }
