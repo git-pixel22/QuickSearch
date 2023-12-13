@@ -7,11 +7,9 @@ chrome.commands.onCommand.addListener(function (command) {
 
         const newTab = window.open(url, '_blank');
 
-        newTab.onload = function() {
-          const elem = newTab.document.querySelector("textarea");
-          elem.value = selectedText;
-          elem.focus();
-        };
+        const elem = newTab.document.querySelector("textarea");
+        elem.value = selectedText;
+        elem.focus();
       `
     });
   }
